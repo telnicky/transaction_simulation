@@ -15,6 +15,12 @@ namespace cs3505
 
 {
 
+    product::product() {
+      this->shelf_life = 0;
+      this->UPC = "";
+      this->name = "";
+    }
+
     product::product(int shelf_life, std::string UPC ,std::string name)     // Constructor
     {
       this->shelf_life = shelf_life;

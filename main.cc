@@ -8,7 +8,8 @@
 
 using namespace std;
 
-void read_txt(string filename)
+
+void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses, map<string, cs3505::product> & products)
 {
 	ifstream in(filename.c_str());
 	string current_word;
@@ -61,7 +62,7 @@ void read_txt(string filename)
 	 */
 	//Also is this the correct way to add an item to a map 
 	//Also how do I access an object in a map to update that objects properties.
-        products[temp_upc] = product(temp_shelf_life, temp_upc, temp_name);
+        products[temp_upc] = cs3505::product(temp_shelf_life, temp_upc, temp_name);
         
       }
 
@@ -163,7 +164,10 @@ int main() {
   map<string, cs3505::Warehouse> warehouses;
   map<string, cs3505::product> products;
 
-  read_txt("data1.txt");
+
+
+  read_txt("data1.txt", warehouses, products);
 
  return 0;
+ 
 }

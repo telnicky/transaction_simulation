@@ -19,6 +19,7 @@ namespace cs3505
   class product
   {
   public:
+    product();
     product(int shelf_life, std::string UPC, std::string name);     // Constructor
     product(const product & other);               // Copy constructor
     //~product();                                 // Destructor
