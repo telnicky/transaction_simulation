@@ -15,10 +15,11 @@ namespace cs3505
 
 {
 
-    product::product(int shelf_life, std::string UPC)     // Constructor
+    product::product(int shelf_life, std::string UPC ,std::string name)     // Constructor
     {
       this->shelf_life = shelf_life;
       this->UPC = UPC;
+      this->name = name;
     }
 
     product::product(const product & other) // Copy constructor
@@ -29,7 +30,7 @@ namespace cs3505
 
     //~product();                      // Destructor
 
-    int product::getShelf_life()
+    int product::get_shelf_life()
     {
       return shelf_life;
     }
@@ -43,9 +44,14 @@ namespace cs3505
 
     }
 
-    std::string product::getUPC()
+    std::string product::get_upc()
     {
       return UPC;
+    }
+
+    std::string product::get_name()
+    {
+      return name;
     }
 
 }

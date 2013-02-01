@@ -1,6 +1,9 @@
 // Warehouse Implementation
 // cs3505 1/28/13
 #include "warehouse.h"
+#include "date.h"
+#include "product.h"
+
 using namespace std;
 
 namespace cs3505 {
@@ -20,46 +23,46 @@ namespace cs3505 {
   }
 
   int Warehouse::next_day() {
-    for (map<string, list<string> >::iterator it = products.begin(); 
+    for (map<string, list<product> >::iterator it = products.begin(); 
         it != products.end(); ++it) {
       decrement_product_shelf_life(it->second); 
     }
   }
   
-  int Warehouse::receive(string upc, int quantity) {
+  int Warehouse::receive(product food_item, int quantity) {
     // products map
     // TODO: push product to list in correct position based on shelf life
     // TODO: push new product not string
-    products[upc].push_front(upc);
+    products[food_item.get_upc()].push_front(food_item);
 
     // inventory map
-    inventory[upc] += 1;
+    inventory[food_item.get_upc()] += 1;
     
     return 1;
   }
   
-  int Warehouse::request(std::string upc, int quantity) {
+  int Warehouse::request(product food_item, int quantity) {
     // check if product is in stock
-    if(inventory[upc]) {
+    if(inventory[food_item.get_upc()]) {
       return 0;
     }
     
     // decrement stock
-    inventory[upc] -= 1;
+    inventory[food_item.get_upc()] -= 1;
 
     // products map
     // when sorted this should be removing the product
     // closest to expiring
-    products[upc].pop_front();
+    products[food_item.get_upc()].pop_front();
     return 1;
   }
 
-  //TODO: date should be of type date
-  int Warehouse::set_start_day(std::string date) {
+  
+  int Warehouse::set_start_day(date date) {
     start_date = date;
   }
   
-  int Warehouse::decrement_product_shelf_life(list<string> & product) {
+  int Warehouse::decrement_product_shelf_life(list<product> & product) {
  //   for (list<int>::iterator it = product.begin(); it != product.end(); ++it) {
       // TODO: decrement shelf life by one
       // update inventory map

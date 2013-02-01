@@ -11,6 +11,13 @@
 
 namespace cs3505
 {
+    //Empty Constructor
+    date::date()
+    {
+        this->month = 0;
+        this->day = 0;
+        this->year = 0;
+    }
     // Constructor
     date::date(int _month, int _day ,int _year) 
     {
@@ -35,6 +42,7 @@ namespace cs3505
      */
     std::ostream& operator<< (std::ostream &out, const date & rhs )
     {
+
         out << rhs.month << "/" << rhs.day << "/" << rhs.year;
 
         return out;
@@ -51,10 +59,10 @@ namespace cs3505
 
             if(day == 30)
             {
-                day == 1;
+                day = 1;
                 if(month == 12)
                 {
-                    month == 1;
+                    month = 1;
                     year++;
                 }
                 else  
@@ -73,16 +81,18 @@ namespace cs3505
             {
                 if(day == 29)
                  {
-                    day == 1;
+                    day = 1;
 
                     if(month == 12)
                     {
-                        month == 1;
+                        month = 1;
                         year++;
                     }
                     else  
                         month++; 
                 }
+                else
+                    day++;
             }
 
             //Not a Lear Year
@@ -90,11 +100,11 @@ namespace cs3505
             {
                 if(day == 28)
                 {
-                    day == 1;
+                    day = 1;
 
                     if(month == 12)
                     {
-                        month == 1;
+                        month = 1;
                         year++;
                     }
                     else  
@@ -110,10 +120,11 @@ namespace cs3505
         {
             if(day == 31)
             {
-                day == 1;
+                day = 1;
+
                 if(month == 12)
                 {
-                    month == 1;
+                    month = 1;
                     year++;
                 }
                 else  

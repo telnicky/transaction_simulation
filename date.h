@@ -18,6 +18,8 @@ namespace cs3505
   class date
   {
   public:
+    
+    date();
     date(int _month, int _day , int _year);     // Constructor
     date(const date & other);                   // Copy constructor
     //~date();                                  // Destructor

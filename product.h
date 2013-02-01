@@ -19,18 +19,20 @@ namespace cs3505
   class product
   {
   public:
-    product(int shelf_life, std::string UPC);     // Constructor
+    product(int shelf_life, std::string UPC, std::string name);     // Constructor
     product(const product & other);               // Copy constructor
     //~product();                                 // Destructor
 
-    int getShelf_life();
+    int get_shelf_life();
     void decrement_shelf_life();
-    std::string getUPC();
+    std::string get_upc();
+    std::string get_name();
    
      
   private:
-    int shelf_life;  //The length of time a product is good for
+    int shelf_life;       //The length of time a product is good for
     std::string UPC;      //Prodoct UPC code
+    std::string name;          //Name of the product
     
   };
 
