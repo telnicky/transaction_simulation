@@ -1,8 +1,8 @@
 // Warehouse Implementation
 // cs3505 1/28/13
+#include "product.h"
 #include "warehouse.h"
 #include "date.h"
-#include "product.h"
 
 using namespace std;
 
@@ -13,9 +13,7 @@ namespace cs3505 {
   }
 
   Warehouse::~Warehouse() {
-    delete &products;
-    delete &inventory;
-    delete &name;
+
   }
 
   string Warehouse::get_name() {
@@ -63,15 +61,15 @@ namespace cs3505 {
   }
   
 
-  int Warehouse::decrement_product_shelf_life(list<product> & product) {
-    for (list<product>::iterator it = product.begin(); it != product.end(); ++it) {
+  int Warehouse::decrement_product_shelf_life(list<product> & product_list) {
+    for (list<product>::iterator it = product_list.begin(); it != product_list.end(); ++it) {
       // TODO: decrement shelf life by one
-      it->second.decrement_shelf_life();
+      it->decrement_shelf_life();
     }
     
     //TODO: make sure front exists as well
-    while(product.front.get_shelf_life() == 0) {
-      product.pop_front();
-    }
+    // while(product_list.front.get_shelf_life() == 0) {
+      // product_list.pop_front();
+    // }
   }
 }

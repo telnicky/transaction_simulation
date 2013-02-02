@@ -7,8 +7,8 @@
  */
 #include <iostream>
 #include <sstream>
-#include "product.h"
 #include <string>
+#include "product.h"
 
 
 namespace cs3505

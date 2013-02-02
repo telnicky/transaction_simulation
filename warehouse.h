@@ -1,12 +1,15 @@
 // Warehouse Header file
 // CS3505 1/28/13
 //
+
+#ifndef WAREHOUSE
+#define WAREHOUSE
+
 #include <map>
 #include <string>
 #include <list>
 #include "date.h"
 #include "product.h"
-
 
 namespace cs3505 {
 
@@ -48,3 +51,5 @@ namespace cs3505 {
     int decrement_product_shelf_life(std::list<product> & product);
   };
 }
+
+#endif

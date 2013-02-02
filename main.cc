@@ -55,8 +55,8 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses, map<
           }
           else;  
         }
-
-        products[temp_upc].push_front(cs3505::product(temp_shelf_life, temp_upc, temp_name));
+        
+        products[temp_upc] = cs3505::product(temp_shelf_life, temp_upc, temp_name);
         
       }
 
