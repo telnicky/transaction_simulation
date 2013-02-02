@@ -62,10 +62,16 @@ namespace cs3505 {
     start_date = date;
   }
   
+
   int Warehouse::decrement_product_shelf_life(list<product> & product) {
- //   for (list<int>::iterator it = product.begin(); it != product.end(); ++it) {
+    for (list<product>::iterator it = product.begin(); it != product.end(); ++it) {
       // TODO: decrement shelf life by one
-      // update inventory map
-   // }
+      it->second.decrement_shelf_life();
+    }
+    
+    //TODO: make sure front exists as well
+    while(product.front.get_shelf_life() == 0) {
+      product.pop_front();
+    }
   }
 }

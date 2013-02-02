@@ -55,14 +55,8 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses, map<
           }
           else;  
         }
-	// Travis I'm getting this error with this code:
-	/*main.cc: In function ‘void read_txt(std::string)’:
-	 *main.cc:58: error: ‘products’ was not declared in this scope
-	 *main.cc:58: error: ‘product’ was not declared in this scope
-	 */
-	//Also is this the correct way to add an item to a map 
-	//Also how do I access an object in a map to update that objects properties.
-        products[temp_upc] = cs3505::product(temp_shelf_life, temp_upc, temp_name);
+
+        products[temp_upc].push_front(cs3505::product(temp_shelf_life, temp_upc, temp_name));
         
       }
 
