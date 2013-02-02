@@ -9,10 +9,6 @@ using namespace std;
 
 namespace cs3505 {
 
-  Warehouse::Warehouse()
-  {
-    name = "";
-  }
   Warehouse::Warehouse(std::string warehouse_name) {
     name = warehouse_name;
     total_days = 0;
@@ -25,12 +21,16 @@ namespace cs3505 {
 
   Warehouse::~Warehouse() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     // delete &products;
     // delete &inventory;
     // delete &name;
 >>>>>>> Some errors in Parsing
+=======
+
+>>>>>>> moved out_of_stock into warehouse
   }
 
   string Warehouse::get_name() {
@@ -72,7 +72,6 @@ namespace cs3505 {
   int Warehouse::set_start_day(date date) {
     start_date = date;
   }
-
   
 
   int Warehouse::decrement_product_shelf_life(list<product> & product_list) {

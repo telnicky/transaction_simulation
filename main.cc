@@ -13,6 +13,7 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
   map<string, cs3505::product> & products, cs3505::date start_date)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	ifstream in(filename.c_str());
 	string current_word;
   
@@ -21,10 +22,16 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
   string current_word;
 
 >>>>>>> Some errors in Parsing
+=======
+	ifstream in(filename.c_str());
+	string current_word;
+  
+>>>>>>> moved out_of_stock into warehouse
   string temp_upc = "";
   int temp_shelf_life = 0;
   string temp_name = "";
   string temp_warehouse_name = "";
+<<<<<<< HEAD
 <<<<<<< HEAD
   string temp_date = "";  
 	
@@ -33,6 +40,10 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
   cs3505::date start_date;
 
 >>>>>>> Some errors in Parsing
+=======
+  string temp_date = "";  
+	
+>>>>>>> moved out_of_stock into warehouse
 
    while(!in.fail())
    {
@@ -62,6 +73,7 @@ cout << "Description: " << temp_name << endl;
           else;  
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         products[temp_upc] = cs3505::product(temp_shelf_life, temp_upc, temp_name);        
 =======
@@ -79,11 +91,16 @@ cout << "Description: " << temp_name << endl;
         products[temp_upc] = cs3505::product(temp_shelf_life, temp_upc, temp_name);
         
 >>>>>>> Some errors in Parsing
+=======
+
+        products[temp_upc] = cs3505::product(temp_shelf_life, temp_upc, temp_name);        
+>>>>>>> moved out_of_stock into warehouse
       }
 
       //First word of a line == Warehouse
       else if(current_word == "Warehouse")   
       {
+        //for(int i = 0; i < 8 ; i++)
         int i = 0;
         while(true)
         {
@@ -101,9 +118,12 @@ cout << "Description: " << temp_name << endl;
 
         warehouses[temp_warehouse_name] = cs3505::Warehouse(temp_warehouse_name);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         
 >>>>>>> Some errors in Parsing
+=======
+>>>>>>> moved out_of_stock into warehouse
       }
 
       //First word of a line == Start
@@ -111,10 +131,14 @@ cout << "Description: " << temp_name << endl;
       {
         in >> current_word;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> moved out_of_stock into warehouse
         in >> temp_date;
 // cout << "M: " << temp_date.substr(0,2) << endl;
 // cout << "D: " << temp_date.substr(3,2) << endl;
 // cout << "Y: " << temp_date.substr(6,4) << endl;
+<<<<<<< HEAD
       
         int month = atoi(temp_date.substr(0,2).c_str());
         int day = atoi(temp_date.substr(3,2).c_str());
@@ -130,6 +154,12 @@ cout << "Description: " << temp_name << endl;
         int year = atoi(temp_date.substr(7,4).c_str());
         if(month < 10)
 >>>>>>> Some errors in Parsing
+=======
+      
+        int month = atoi(temp_date.substr(0,2).c_str());
+        int day = atoi(temp_date.substr(3,2).c_str());
+        int year = atoi(temp_date.substr(6,4).c_str());
+>>>>>>> moved out_of_stock into warehouse
 
 
 // cout << "Month: " << month << endl;
@@ -157,11 +187,14 @@ cout << "Description: " << temp_name << endl;
           .receive(products[temp_upc], temp_quantity);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         //Update the warehouse records
         warehouses[temp_warehouse_name].receive(products[temp_upc],temp_quantity);
         
 >>>>>>> Some errors in Parsing
+=======
+>>>>>>> moved out_of_stock into warehouse
       }
 
       //First word  == request
@@ -177,6 +210,7 @@ cout << "Description: " << temp_name << endl;
   // << temp_warehouse_name << endl;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         //Update warehouse;
         // warehouses[temp_warehouse_name]
           // .request(products[temp_upc], temp_quantity);
@@ -184,6 +218,11 @@ cout << "Description: " << temp_name << endl;
         //Update the warehouse records
         warehouses[temp_warehouse_name].request(products[temp_upc], temp_quantity);
 >>>>>>> Some errors in Parsing
+=======
+        //Update warehouse;
+        // warehouses[temp_warehouse_name]
+          // .request(products[temp_upc], temp_quantity);
+>>>>>>> moved out_of_stock into warehouse
         
       }
 
@@ -192,6 +231,7 @@ cout << "Description: " << temp_name << endl;
       {
         start_date.increment();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 // cout << "NEXT DAY: " << start_date << endl; 
       }
@@ -199,72 +239,40 @@ cout << "Description: " << temp_name << endl;
 =======
         //cout << start_date << endl; 
       }
+=======
+>>>>>>> moved out_of_stock into warehouse
 
-      else if (current_word == "End")
-        break;
+// cout << "NEXT DAY: " << start_date << endl; 
+      }
 
+<<<<<<< HEAD
       else;
         // Do Nothing, Continue to get next word until end of File
 >>>>>>> Some errors in Parsing
+=======
+>>>>>>> moved out_of_stock into warehouse
    }
 
-}
-
-//Determines which products don't exist in any warehouse
-void out_of_stock(map<string, cs3505::Warehouse> & warehouses, map<string, cs3505::product> & products)
-{
-  map<string, cs3505::product> temp_products = products;
-
-  //Iterate through all the warehouses
-  for (map<string, cs3505::Warehouse >::iterator wit = warehouses.begin(); 
-        wit != warehouses.end(); ++wit) 
-  {
-    //cout << wit->first << endl;
-
-    //Iterate through the products in each of those warehouses
-    //For each product that exists erase it from the list of temp_products
-    /*
-     *There is a problem iterating through an object from an iterator
-     *Once this line of code works the rest should
-     */
-    // for(map<string, list<cs3505::product> >::iterator it = wit->second.products.begin(); 
-    //     it != wit->second.products.end(); ++it)
-    // {
-      //cout << it->second.get_name() << endl;
-      // if(temp_products[it.get_name()])
-      //   temp_products.erase(it.get_name());
-      //  
-    //}
-  }
-  //cout << "Unstocked Products:" << endl;
-  //
-  //temp_products contains all products that don't exist in any warehouse
-  //Iterate through the map and return those items
-  // if(!temp_products.empty())
-  // {
-  //   cout << "Unstocked Products:" << endl;
-
-  //   for (map<string, cs3505::product >::iterator pit = temp_products.begin(); 
-  //       pit != temp_products.end(); ++pit) 
-  //     cout << pit.get_upc() << " " << pit.get_name() <<endl;
-  // }
-  //
-  //cout << "" << endl;
 }
 
 //Prints a list of prodcuts that are in stock at every warehouse
 void in_stock(map<string, cs3505::Warehouse> & warehouses, map<string, cs3505::product> & products)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   //map<string, cs3505::product> temp_products = products;
 =======
   map<string, cs3505::product> temp_products = products;
 >>>>>>> Some errors in Parsing
+=======
+  //map<string, cs3505::product> temp_products = products;
+>>>>>>> moved out_of_stock into warehouse
 
   //Iterate through all the warehouses
   for (map<string, cs3505::Warehouse >::iterator wit = warehouses.begin(); 
         wit != warehouses.end(); ++wit) 
   {
+<<<<<<< HEAD
 <<<<<<< HEAD
     cout << wit->first << endl;
     //map<string, cs3505::product> current_temp;
@@ -272,6 +280,10 @@ void in_stock(map<string, cs3505::Warehouse> & warehouses, map<string, cs3505::p
     //cout << wit->first << endl;
     map<string, cs3505::product> current_temp;
 >>>>>>> Some errors in Parsing
+=======
+    cout << wit->first << endl;
+    //map<string, cs3505::product> current_temp;
+>>>>>>> moved out_of_stock into warehouse
     //Iterate through the products in each of those warehouses
     //For each product that exists continue to add it back to the list as long as other 
     //warehouses contain it
@@ -311,14 +323,8 @@ int main() {
   map<string, cs3505::product> products;
   cs3505::date start_date;
 
+
 <<<<<<< HEAD
-
-
-  read_txt("data1.txt", warehouses, products);
-=======
-  cout << "Report by Dustin Robinson and Travis Elnicky" << endl;
-  cout << "" << endl;
-
 <<<<<<< HEAD
   read_txt("data1.txt", warehouses, products, start_date);
 =======
@@ -328,6 +334,10 @@ int main() {
 
 >>>>>>> Some errors in Parsing
 >>>>>>> Some errors in Parsing
+=======
+
+  read_txt("data1.txt", warehouses, products, start_date);
+>>>>>>> moved out_of_stock into warehouse
 
   for (map<string, cs3505::Warehouse>::iterator wh = warehouses.begin(); 
       wh != warehouses.end(); ++wh) {

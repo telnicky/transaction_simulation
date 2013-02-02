@@ -18,7 +18,7 @@ namespace cs3505 {
 
   class Warehouse {
   public:
-    Warehouse();
+
     Warehouse(std::string warehouse_name);
     Warehouse();
     ~Warehouse();
