@@ -46,10 +46,6 @@ namespace cs3505 {
     // products will be inserted in list based on shelf life
     
     std::map<std::string, std::list<product> > products;
-    
-    // map for inventory information
-    // key is upc, value is amount in stock
-    // std::map<std::string, int> inventory;
 
     // name of Warehouse
     std::string name;
@@ -62,8 +58,6 @@ namespace cs3505 {
     int current_day;
     int total_days;
     
-    // TODO: list should contain products in it
-    int decrement_product_shelf_life(std::list<product> & product);
   };
 }
 

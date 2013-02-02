@@ -32,6 +32,7 @@ namespace cs3505
     {
       this->shelf_life = other.shelf_life;
       this->UPC = other.UPC;
+      this->name = other.name;
     }
 
     //~product();                      // Destructor

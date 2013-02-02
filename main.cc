@@ -40,11 +40,9 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
           else if(i == 5)
           {
             in >> temp_shelf_life;
-// cout<< "Shelf Life: " << temp_shelf_life << endl;
             in >> current_word;
             getline(in, temp_name);
             temp_name.erase(0, 1);
-// cout << "Description: " << temp_name << endl;
             break;
           }
           else;  
@@ -56,21 +54,9 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
       //First word of a line == Warehouse
       else if(current_word == "Warehouse")   
       {
-        //for(int i = 0; i < 8 ; i++)
-        int i = 0;
-        while(true)
-        {
-          i++;
-          in >> current_word;
-
-          if(i == 1)
-          {
-            in >> temp_warehouse_name;
-// cout << "Warehouse Name: " << temp_warehouse_name << endl;
-            break;
-          }
-          else; 
-        }
+        
+        in >> current_word;
+        in >> temp_warehouse_name;
 
         warehouses[temp_warehouse_name] = cs3505::Warehouse(temp_warehouse_name);
       }
@@ -80,28 +66,18 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
       {
         in >> current_word;
         in >> temp_date;
-// cout << "M: " << temp_date.substr(0,2) << endl;
-// cout << "D: " << temp_date.substr(3,2) << endl;
-// cout << "Y: " << temp_date.substr(6,4) << endl;
       
         int month = atoi(temp_date.substr(0,2).c_str());
         int day = atoi(temp_date.substr(3,2).c_str());
         int year = atoi(temp_date.substr(6,4).c_str());
 
-
-// cout << "Month: " << month << endl;
-// cout << "Day: " << day << endl;
-// cout << "Year: " << year << endl;
         cs3505::date temp(month, day, year);
         start_date = temp;
 
         for (map<string, cs3505::Warehouse>::iterator wh = warehouses.begin(); 
           wh != warehouses.end(); ++wh) {          
           wh->second.set_start_day(start_date);
-// cout << wh->second << endl;
         } 
-
-// cout << "Date: " << start_date << endl;
       }
 
       //First word  == recieve
@@ -112,9 +88,7 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
         in >> temp_upc;
         in >> temp_quantity;
         in >> temp_warehouse_name;
-// cout << "REC: " << temp_upc << " " << temp_quantity << " "
-  // << temp_warehouse_name << endl;
-// cout << "PROD: " << products[temp_upc] << endl;
+        
         // update warehouse
         warehouses[temp_warehouse_name]
           .receive(products[temp_upc], temp_quantity);
@@ -243,8 +217,12 @@ int main() {
   cs3505::date start_date;
 
   read_txt("data1.txt", warehouses, products, start_date);
+  cout << "Report by Travis Elnicky and Dustin Robinsen" << endl;
+  cout << endl;
   out_of_stock(warehouses, products);
+  cout << endl;
   in_stock(warehouses,products);
+  cout << endl;
   print_busiest_day(warehouses);
 
 

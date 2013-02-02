@@ -46,7 +46,6 @@ namespace cs3505 {
   
   int Warehouse::receive(product food_item, int quantity) {
     transaction(quantity);
-    
     // products map
     food_item.set_shelf_life(total_days + food_item.get_shelf_life());
     for( int i = 0; i < quantity; i++) {
@@ -96,19 +95,6 @@ namespace cs3505 {
 
   int Warehouse::set_busiest_day(date date) {
     busiest_day = date;
-  }
-  
-
-  int Warehouse::decrement_product_shelf_life(list<product> & product_list) {
-    for (list<product>::iterator it = product_list.begin(); it != product_list.end(); ++it) {
-      // TODO: decrement shelf life by one
-      it->decrement_shelf_life();
-    }
-    
-    //TODO: make sure front exists as well
-    // while(product_list.front.get_shelf_life() == 0) {
-      // product_list.pop_front();
-    // }
   }
 
   int Warehouse::transaction(int quantity) {
