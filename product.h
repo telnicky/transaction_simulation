@@ -24,6 +24,7 @@ namespace cs3505
     //~product();                                 // Destructor
 
     void decrement_shelf_life();
+    bool expired(int date);
     int set_shelf_life(int _exp);
     int get_shelf_life() const;
     std::string get_upc() const;

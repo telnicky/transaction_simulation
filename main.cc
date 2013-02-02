@@ -40,11 +40,11 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
           else if(i == 5)
           {
             in >> temp_shelf_life;
-cout<< "Shelf Life: " << temp_shelf_life << endl;
+// cout<< "Shelf Life: " << temp_shelf_life << endl;
             in >> current_word;
             getline(in, temp_name);
             temp_name.erase(0, 1);
-cout << "Description: " << temp_name << endl;
+// cout << "Description: " << temp_name << endl;
             break;
           }
           else;  
@@ -95,6 +95,12 @@ cout << "Description: " << temp_name << endl;
         cs3505::date temp(month, day, year);
         start_date = temp;
 
+        for (map<string, cs3505::Warehouse>::iterator wh = warehouses.begin(); 
+          wh != warehouses.end(); ++wh) {          
+          wh->second.set_start_day(start_date);
+// cout << wh->second << endl;
+        } 
+
 // cout << "Date: " << start_date << endl;
       }
 
@@ -128,8 +134,8 @@ cout << "Description: " << temp_name << endl;
   // << temp_warehouse_name << endl;
 
         //Update warehouse;
-        // warehouses[temp_warehouse_name]
-          // .request(products[temp_upc], temp_quantity);
+        warehouses[temp_warehouse_name]
+          .request(products[temp_upc], temp_quantity);
         
       }
 
@@ -137,6 +143,11 @@ cout << "Description: " << temp_name << endl;
       else if(current_word == "Next")   
       {
         start_date.increment();
+        for (map<string, cs3505::Warehouse>::iterator wh = warehouses.begin(); 
+          wh != warehouses.end(); ++wh) {          
+          wh->second.next_day();
+// cout << wh->second << endl;
+        } 
 
 // cout << "NEXT DAY: " << start_date << endl; 
       }
@@ -231,6 +242,19 @@ void in_stock(map<string, cs3505::Warehouse> & warehouses, map<string, cs3505::p
   // cout << "" << endl;
 }
 
+int print_busiest_day(map<string, cs3505::Warehouse> &warehouses) {
+  cout << "Busiest Days:" << endl;
+
+  for (map<string, cs3505::Warehouse>::iterator wh = warehouses.begin(); 
+      wh != warehouses.end(); ++wh) {
+    cout << wh->second.get_name() << " ";
+    cout << wh->second.get_busiest_day() << " ";
+    cout << wh->second.get_busiest_total() << endl;;
+  }
+
+  return 0;
+}
+
 int main() {
 
   map<string, cs3505::Warehouse> warehouses;
@@ -240,11 +264,7 @@ int main() {
 
 
   read_txt("data1.txt", warehouses, products, start_date);
-
-  for (map<string, cs3505::Warehouse>::iterator wh = warehouses.begin(); 
-      wh != warehouses.end(); ++wh) {
-    cout << wh->second << endl;
-  }
+  print_busiest_day(warehouses);
  return 0;
  
 }

@@ -12,15 +12,27 @@ namespace cs3505 {
   Warehouse::Warehouse(std::string warehouse_name) {
     name = warehouse_name;
     total_days = 0;
+    busiest_total = 0;
+    current_day = 0;
   }
 
   Warehouse::Warehouse() {
     name = "";
     total_days = 0;
+    busiest_total = 0;
+    current_day = 0;
   }
 
   Warehouse::~Warehouse() {
 
+  }
+
+  date Warehouse::get_busiest_day() {
+    return busiest_day;
+  }
+
+  int Warehouse::get_busiest_total() {
+    return busiest_total;
   }
 
   string Warehouse::get_name() {
@@ -28,39 +40,62 @@ namespace cs3505 {
   }
 
   int Warehouse::next_day() {
-    total_days++;
+    current_day = 0;
+    return ++total_days;
   }
   
   int Warehouse::receive(product food_item, int quantity) {
+    transaction(quantity);
+    
     // products map
     food_item.set_shelf_life(total_days + food_item.get_shelf_life());
-    products[food_item.get_upc()].push_front(food_item);
-    
-    // inventory map
-    inventory[food_item.get_upc()] += 1;
+    for( int i = 0; i < quantity; i++) {
+      products[food_item.get_upc()].push_front(food_item);
+    }
+
     return 1;
   }
   
   int Warehouse::request(product food_item, int quantity) {
+    transaction(quantity);
+    
+    product request;
+    int fulfilled = 0;
+    list<product> product_list;
+    product_list = products[food_item.get_upc()];
+
+
     // check if product is in stock
-    if(inventory[food_item.get_upc()]) {
+    if(product_list.size() == 0) {
       return 0;
     }
-    
-    // decrement stock
-    inventory[food_item.get_upc()] -= 1;
 
-    // products map
-    // when sorted this should be removing the product
-    // closest to expiring
+    while(true) {
+      if(product_list.size() == 0) {
+        break;
+      }
+
+      request = product_list.front();
+      product_list.pop_front();
+
+      if(!request.expired(total_days)) {
+        fulfilled++;
+        if(fulfilled == quantity){
+          break;
+        }
+      }      
+    }
     
-    products[food_item.get_upc()].pop_front();
     return 1;
   }
 
   
   int Warehouse::set_start_day(date date) {
     start_date = date;
+  }
+
+  int Warehouse::set_busiest_day(date date) {
+    busiest_day = date;
   }
   
 
@@ -76,8 +111,20 @@ namespace cs3505 {
     // }
   }
 
+  int Warehouse::transaction(int quantity) {
+    current_day += quantity;
 
-  /*
+    if(busiest_total <= current_day) {
+      date temp = start_date;      
+      for(int i = 0; i < total_days; i++) {
+        temp.increment();
+      }
+      
+      busiest_total = current_day;
+      set_busiest_day(temp);      
+    }
+  }
+    /*
      * Overrides cout <<
      */
   std::ostream& operator<< (std::ostream &out, Warehouse & rhs ) {
@@ -86,6 +133,7 @@ namespace cs3505 {
     // list products
     for (product_list; product_list != rhs.products.end(); ++product_list) {
       list<product>::iterator food_item = product_list->second.begin();
+      
       for (food_item; food_item != product_list->second.end(); ++food_item) {        
         out << (*food_item) << endl;
       }

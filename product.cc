@@ -36,6 +36,12 @@ namespace cs3505
 
     //~product();                      // Destructor
 
+    bool product::expired(int date) {
+      if(date > shelf_life)
+        return true;
+      return false;
+    }
+
     int product::set_shelf_life(int _exp) {
       shelf_life = _exp;
       return 0;

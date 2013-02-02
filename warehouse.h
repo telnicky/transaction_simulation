@@ -28,7 +28,13 @@ namespace cs3505 {
     
     // this method will advance the products shelf life by one day
     int next_day();    
+    date get_busiest_day();
+    int get_busiest_total();
+    int set_busiest_day(date date);
     int set_start_day(date date);
+
+
+    int transaction(int quantity);
 
     friend std:: ostream& operator<< (std::ostream &out, Warehouse & rhs ); //Overrides cout
   private:
@@ -40,14 +46,17 @@ namespace cs3505 {
     
     // map for inventory information
     // key is upc, value is amount in stock
-    std::map<std::string, int> inventory;
+    // std::map<std::string, int> inventory;
 
     // name of Warehouse
     std::string name;
 
     
     date start_date;
+    date busiest_day;
 
+    int busiest_total;
+    int current_day;
     int total_days;
     
     // TODO: list should contain products in it
