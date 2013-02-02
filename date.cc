@@ -34,7 +34,7 @@ namespace cs3505
         this->year = other.year;
     }
 
-    //~product();  // Destructor
+    //~product();  // Destructor if needed
     //ToDO
 
     /*
