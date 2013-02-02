@@ -30,6 +30,9 @@ namespace cs3505 {
     int next_day();    
     date get_busiest_day();
     int get_busiest_total();
+
+    bool is_out_of_stock(std::string upc);
+
     int set_busiest_day(date date);
     int set_start_day(date date);
 

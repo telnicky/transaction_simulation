@@ -156,57 +156,72 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
 
 }
 
+//Prints a list of prodcuts that are out of stock at every warehouse
+void out_of_stock(map<string, cs3505::Warehouse> & warehouses, map<string, cs3505::product> & products)
+{
+
+  map<string, cs3505::product> temp_products = products;
+
+  //Iterate through all the warehouses
+  for (map<string, cs3505::Warehouse >::iterator wit = warehouses.begin(); 
+        wit != warehouses.end(); ++wit) 
+  {
+    map<string, cs3505::product>::iterator product_list = products.begin();
+    
+    // check for products that are out of stock
+    for (product_list; product_list != products.end(); ++product_list) {
+      string upc = product_list->first;
+
+      if(!(wit->second.is_out_of_stock(upc))) {
+        // remove from in stock list
+        temp_products.erase(upc);
+      }
+    }
+  }
+
+  // remaining items in list are in stock in every warehouse
+  // print products in stock
+
+  cout << "Unstocked Products:" << endl;
+  for(map<string, cs3505::product>::iterator prod = temp_products.begin(); 
+        prod != temp_products.end(); ++prod) {
+    cout << prod->first << " " << prod->second.get_name() << endl;
+  }
+
+}
+
 //Prints a list of prodcuts that are in stock at every warehouse
 void in_stock(map<string, cs3505::Warehouse> & warehouses, map<string, cs3505::product> & products)
 {
 
   map<string, cs3505::product> temp_products = products;
 
-  //map<string, cs3505::product> temp_products = products;
-
-
   //Iterate through all the warehouses
   for (map<string, cs3505::Warehouse >::iterator wit = warehouses.begin(); 
         wit != warehouses.end(); ++wit) 
   {
+    map<string, cs3505::product>::iterator product_list = products.begin();
+    
+    // check for products that are out of stock
+    for (product_list; product_list != products.end(); ++product_list) {
+      string upc = product_list->first;
 
-    cout << wit->first << endl;
-    //map<string, cs3505::product> current_temp;
-    //cout << wit->first << endl;
-    map<string, cs3505::product> current_temp;
-    cout << wit->first << endl;
-    //map<string, cs3505::product> current_temp;
-    //Iterate through the products in each of those warehouses
-    //For each product that exists continue to add it back to the list as long as other 
-    //warehouses contain it
-    /*
-     *There is a problem iterating through an object from an iterator
-     *Once this line of code works the rest should
-     */
-    // for(map<string, list<cs3505::product> >::iterator it = wit->second.products.begin(); 
-    //     it != wit->second.products.end(); ++it)
-    // {
-    //   map<string, cs3505::product> current_temp;
-
-    //   if(temp_products[it->first])
-    //     current_temp[it->first] = it->second;
-    // }
-    // temp_products = current_temp;
+      if(wit->second.is_out_of_stock(upc)) {
+        // remove from in stock list
+        temp_products.erase(upc);
+      }
+    }
   }
-  //cout << "Fully-Stocked Products:" << endl;
-  //
-  //temp_products contains all products that exist in every warehouse
-  //Iterate through the map and return those items
-  // if(!temp_products.empty())
-  // {
-  //
-  //
-  //   for (map<string, cs3505::product >::iterator pit = temp_products.begin(); 
-  //       pit != temp_products.end(); ++pit) 
-  //     cout << pit.get_upc() << " " << pit.get_name() <<endl;
-  // }
-  //
-  // cout << "" << endl;
+
+  // remaining items in list are in stock in every warehouse
+  // print products in stock
+
+  cout << "Fully-Stocked Products:" << endl;
+  for(map<string, cs3505::product>::iterator prod = temp_products.begin(); 
+        prod != temp_products.end(); ++prod) {
+    cout << prod->first << " " << prod->second.get_name() << endl;
+  }
+
 }
 
 int print_busiest_day(map<string, cs3505::Warehouse> &warehouses) {
@@ -228,8 +243,8 @@ int main() {
   cs3505::date start_date;
 
   read_txt("data1.txt", warehouses, products, start_date);
-  // out_of_stock(warehouses, products);
-  // in_stock(warehouses,products);
+  out_of_stock(warehouses, products);
+  in_stock(warehouses,products);
   print_busiest_day(warehouses);
 
 

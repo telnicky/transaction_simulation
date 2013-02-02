@@ -124,6 +124,12 @@ namespace cs3505 {
       set_busiest_day(temp);      
     }
   }
+
+
+  bool Warehouse::is_out_of_stock(string upc) {
+    return products[upc].size() == 0;    
+  }
+
     /*
      * Overrides cout <<
      */
