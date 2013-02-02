@@ -12,15 +12,15 @@ using namespace std;
 void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses, 
   map<string, cs3505::product> & products, cs3505::date start_date)
 {
-	ifstream in(filename.c_str());
-	string current_word;
+  ifstream in(filename.c_str());
+  string current_word;
   
   string temp_upc = "";
   int temp_shelf_life = 0;
   string temp_name = "";
   string temp_warehouse_name = "";
   string temp_date = "";  
-	
+
 
    while(!in.fail())
    {
@@ -156,57 +156,24 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
 
 }
 
-//Determines which products don't exist in any warehouse
-void out_of_stock(map<string, cs3505::Warehouse> & warehouses, map<string, cs3505::product> & products)
-{
-  map<string, cs3505::product> temp_products = products;
-
-  //Iterate through all the warehouses
-  for (map<string, cs3505::Warehouse >::iterator wit = warehouses.begin(); 
-        wit != warehouses.end(); ++wit) 
-  {
-    //cout << wit->first << endl;
-
-    //Iterate through the products in each of those warehouses
-    //For each product that exists erase it from the list of temp_products
-    /*
-     *There is a problem iterating through an object from an iterator
-     *Once this line of code works the rest should
-     */
-    // for(map<string, list<cs3505::product> >::iterator it = wit->second.products.begin(); 
-    //     it != wit->second.products.end(); ++it)
-    // {
-      //cout << it->second.get_name() << endl;
-      // if(temp_products[it.get_name()])
-      //   temp_products.erase(it.get_name());
-      //  
-    //}
-  }
-  //cout << "Unstocked Products:" << endl;
-  //
-  //temp_products contains all products that don't exist in any warehouse
-  //Iterate through the map and return those items
-  // if(!temp_products.empty())
-  // {
-  //   cout << "Unstocked Products:" << endl;
-
-  //   for (map<string, cs3505::product >::iterator pit = temp_products.begin(); 
-  //       pit != temp_products.end(); ++pit) 
-  //     cout << pit.get_upc() << " " << pit.get_name() <<endl;
-  // }
-  //
-  //cout << "" << endl;
-}
-
 //Prints a list of prodcuts that are in stock at every warehouse
 void in_stock(map<string, cs3505::Warehouse> & warehouses, map<string, cs3505::product> & products)
 {
+
+  map<string, cs3505::product> temp_products = products;
+
   //map<string, cs3505::product> temp_products = products;
+
 
   //Iterate through all the warehouses
   for (map<string, cs3505::Warehouse >::iterator wit = warehouses.begin(); 
         wit != warehouses.end(); ++wit) 
   {
+
+    cout << wit->first << endl;
+    //map<string, cs3505::product> current_temp;
+    //cout << wit->first << endl;
+    map<string, cs3505::product> current_temp;
     cout << wit->first << endl;
     //map<string, cs3505::product> current_temp;
     //Iterate through the products in each of those warehouses
@@ -256,15 +223,16 @@ int print_busiest_day(map<string, cs3505::Warehouse> &warehouses) {
 }
 
 int main() {
-
   map<string, cs3505::Warehouse> warehouses;
   map<string, cs3505::product> products;
   cs3505::date start_date;
 
-
-
   read_txt("data1.txt", warehouses, products, start_date);
+  // out_of_stock(warehouses, products);
+  // in_stock(warehouses,products);
   print_busiest_day(warehouses);
+
+
  return 0;
  
 }
