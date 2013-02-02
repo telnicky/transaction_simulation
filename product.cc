@@ -21,11 +21,11 @@ namespace cs3505
       this->name = "";
     }
 
-    product::product(int shelf_life, std::string UPC ,std::string name)     // Constructor
+    product::product(int _shelf_life, std::string _UPC, std::string _name)     // Constructor
     {
-      this->shelf_life = shelf_life;
-      this->UPC = UPC;
-      this->name = name;
+      this->shelf_life = _shelf_life;
+      this->UPC = _UPC;
+      this->name = _name;
     }
 
     product::product(const product & other) // Copy constructor
@@ -36,7 +36,12 @@ namespace cs3505
 
     //~product();                      // Destructor
 
-    int product::get_shelf_life()
+    int product::set_shelf_life(int _exp) {
+      shelf_life = _exp;
+      return 0;
+    }
+
+    int product::get_shelf_life() const
     {
       return shelf_life;
     }
@@ -50,14 +55,26 @@ namespace cs3505
 
     }
 
-    std::string product::get_upc()
+    std::string product::get_upc() const
     {
       return UPC;
     }
 
-    std::string product::get_name()
+    std::string product::get_name() const
     {
-      return name;
+      return this->name;
+    }
+
+    /*
+     * Overrides cout <<
+     */
+    std::ostream& operator<< (std::ostream &out, const product & rhs ) {
+      out << "PROD: " << std::endl;
+      out << "\tUPC: " << rhs.get_upc() << std::endl;
+      out << "\tName: " << rhs.get_name() << std::endl;
+      out << "\tShelf Life: " << rhs.get_shelf_life() << std::endl;
+      // out << "UPC: " << rhs.UPC << " Name: " << rhs.name << " Shelf Life: " << rhs.shelf_life;
+      return out;
     }
 
 }

@@ -3,6 +3,7 @@
 #include "product.h"
 #include "warehouse.h"
 #include "date.h"
+#include <iostream>
 
 using namespace std;
 
@@ -10,6 +11,12 @@ namespace cs3505 {
 
   Warehouse::Warehouse(std::string warehouse_name) {
     name = warehouse_name;
+    total_days = 0;
+  }
+
+  Warehouse::Warehouse() {
+    name = "";
+    total_days = 0;
   }
 
   Warehouse::~Warehouse() {
@@ -21,21 +28,16 @@ namespace cs3505 {
   }
 
   int Warehouse::next_day() {
-    for (map<string, list<product> >::iterator it = products.begin(); 
-        it != products.end(); ++it) {
-      decrement_product_shelf_life(it->second); 
-    }
+    total_days++;
   }
   
   int Warehouse::receive(product food_item, int quantity) {
     // products map
-    // TODO: push product to list in correct position based on shelf life
-    // TODO: push new product not string
+    food_item.set_shelf_life(total_days + food_item.get_shelf_life());
     products[food_item.get_upc()].push_front(food_item);
-
+    
     // inventory map
     inventory[food_item.get_upc()] += 1;
-    
     return 1;
   }
   
@@ -51,6 +53,7 @@ namespace cs3505 {
     // products map
     // when sorted this should be removing the product
     // closest to expiring
+    
     products[food_item.get_upc()].pop_front();
     return 1;
   }
@@ -71,5 +74,23 @@ namespace cs3505 {
     // while(product_list.front.get_shelf_life() == 0) {
       // product_list.pop_front();
     // }
+  }
+
+
+  /*
+     * Overrides cout <<
+     */
+  std::ostream& operator<< (std::ostream &out, Warehouse & rhs ) {
+    out << rhs.name << ": " << endl;
+    map<string, list<product> >::iterator product_list = rhs.products.begin();
+    // list products
+    for (product_list; product_list != rhs.products.end(); ++product_list) {
+      list<product>::iterator food_item = product_list->second.begin();
+      for (food_item; food_item != product_list->second.end(); ++food_item) {        
+        out << (*food_item) << endl;
+      }
+    }
+
+    return out;
   }
 }

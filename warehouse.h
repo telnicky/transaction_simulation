@@ -20,16 +20,17 @@ namespace cs3505 {
   public:
 
     Warehouse(std::string warehouse_name);
+    Warehouse();
     ~Warehouse();
     std::string get_name();
     int receive(product food_item, int quantity);
     int request(product food_item, int quantity);
     
     // this method will advance the products shelf life by one day
-    int next_day();
-    
-    // TODO: date should be of type date
+    int next_day();    
     int set_start_day(date date);
+
+    friend std:: ostream& operator<< (std::ostream &out, Warehouse & rhs ); //Overrides cout
   private:
     // map for product information
     // key is upc, value is a list of products with that upc
@@ -46,6 +47,8 @@ namespace cs3505 {
 
     
     date start_date;
+
+    int total_days;
     
     // TODO: list should contain products in it
     int decrement_product_shelf_life(std::list<product> & product);

@@ -9,22 +9,17 @@
 using namespace std;
 
 
-void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses, map<string, cs3505::product> & products)
+void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses, 
+  map<string, cs3505::product> & products, cs3505::date start_date)
 {
 	ifstream in(filename.c_str());
 	string current_word;
-
-	// in >> first_word;
-  //  in >> first_word;
-	//getline(in, current_word,' ');
-  //cout << current_word <<endl;
   
   string temp_upc = "";
   int temp_shelf_life = 0;
   string temp_name = "";
   string temp_warehouse_name = "";
-  string temp_date = "";
-  cs3505::date start_date;
+  string temp_date = "";  
 	
 
    while(!in.fail())
@@ -44,20 +39,18 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses, map<
             in >> temp_upc;
           else if(i == 5)
           {
-            //cout << current_word << endl;
             in >> temp_shelf_life;
-            cout << temp_shelf_life << endl;
+cout<< "Shelf Life: " << temp_shelf_life << endl;
             in >> current_word;
             getline(in, temp_name);
             temp_name.erase(0, 1);
-            cout << temp_name << endl;
+cout << "Description: " << temp_name << endl;
             break;
           }
           else;  
         }
-        
-        products[temp_upc] = cs3505::product(temp_shelf_life, temp_upc, temp_name);
-        
+
+        products[temp_upc] = cs3505::product(temp_shelf_life, temp_upc, temp_name);        
       }
 
       //First word of a line == Warehouse
@@ -73,14 +66,13 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses, map<
           if(i == 1)
           {
             in >> temp_warehouse_name;
-            cout << temp_warehouse_name << endl;
+// cout << "Warehouse Name: " << temp_warehouse_name << endl;
             break;
           }
           else; 
         }
 
-        //warehouses[temp_warehouse_name] = Warehouse(temp_warehouse_name);
-        //break;
+        warehouses[temp_warehouse_name] = cs3505::Warehouse(temp_warehouse_name);
       }
 
       //First word of a line == Start
@@ -88,40 +80,43 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses, map<
       {
         in >> current_word;
         in >> temp_date;
-        cout << temp_date.substr(0,2) << endl;
-        cout << temp_date.substr(3,2) << endl;
-        cout << temp_date.substr(6,4) << endl;
+// cout << "M: " << temp_date.substr(0,2) << endl;
+// cout << "D: " << temp_date.substr(3,2) << endl;
+// cout << "Y: " << temp_date.substr(6,4) << endl;
       
         int month = atoi(temp_date.substr(0,2).c_str());
         int day = atoi(temp_date.substr(3,2).c_str());
         int year = atoi(temp_date.substr(6,4).c_str());
-        if(month < 10)
 
-        cout << month << endl;
-        cout << day << endl;
-        cout << year << endl;
+
+// cout << "Month: " << month << endl;
+// cout << "Day: " << day << endl;
+// cout << "Year: " << year << endl;
         cs3505::date temp(month, day, year);
         start_date = temp;
 
-        cout << start_date << endl;
+// cout << "Date: " << start_date << endl;
       }
 
       //First word  == recieve
-      else if(current_word == "Receive")   
+      else if(current_word == "Receive:")   
       {
         int temp_quantity;
 
         in >> temp_upc;
         in >> temp_quantity;
         in >> temp_warehouse_name;
+// cout << "REC: " << temp_upc << " " << temp_quantity << " "
+  // << temp_warehouse_name << endl;
+// cout << "PROD: " << products[temp_upc] << endl;
+        // update warehouse
+        warehouses[temp_warehouse_name]
+          .receive(products[temp_upc], temp_quantity);
 
-        //ToDO Uodate warehouse;
-        //warehouses[]
-        
       }
 
       //First word  == request
-      else if(current_word == "Request")   
+      else if(current_word == "Request:")   
       {
         int temp_quantity;
 
@@ -129,10 +124,12 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses, map<
         in >> temp_quantity;
         in >> temp_warehouse_name;
 
-        cout << temp_upc << " " << temp_quantity << " " << temp_warehouse_name << endl;
+// cout << "REQ: " << temp_upc << " " << temp_quantity << " " 
+  // << temp_warehouse_name << endl;
 
-        //ToDO Uodate warehouse;
-        //warehouses[]
+        //Update warehouse;
+        // warehouses[temp_warehouse_name]
+          // .request(products[temp_upc], temp_quantity);
         
       }
 
@@ -141,27 +138,71 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses, map<
       {
         start_date.increment();
 
-        cout << start_date << endl; 
+// cout << "NEXT DAY: " << start_date << endl; 
       }
-
-      else;
-
-        // Eng of File
-      
 
    }
 
+}
+
+//Prints a list of prodcuts that are in stock at every warehouse
+void in_stock(map<string, cs3505::Warehouse> & warehouses, map<string, cs3505::product> & products)
+{
+  //map<string, cs3505::product> temp_products = products;
+
+  //Iterate through all the warehouses
+  for (map<string, cs3505::Warehouse >::iterator wit = warehouses.begin(); 
+        wit != warehouses.end(); ++wit) 
+  {
+    cout << wit->first << endl;
+    //map<string, cs3505::product> current_temp;
+    //Iterate through the products in each of those warehouses
+    //For each product that exists continue to add it back to the list as long as other 
+    //warehouses contain it
+    /*
+     *There is a problem iterating through an object from an iterator
+     *Once this line of code works the rest should
+     */
+    // for(map<string, list<cs3505::product> >::iterator it = wit->second.products.begin(); 
+    //     it != wit->second.products.end(); ++it)
+    // {
+    //   map<string, cs3505::product> current_temp;
+
+    //   if(temp_products[it->first])
+    //     current_temp[it->first] = it->second;
+    // }
+    // temp_products = current_temp;
+  }
+  //cout << "Fully-Stocked Products:" << endl;
+  //
+  //temp_products contains all products that exist in every warehouse
+  //Iterate through the map and return those items
+  // if(!temp_products.empty())
+  // {
+  //
+  //
+  //   for (map<string, cs3505::product >::iterator pit = temp_products.begin(); 
+  //       pit != temp_products.end(); ++pit) 
+  //     cout << pit.get_upc() << " " << pit.get_name() <<endl;
+  // }
+  //
+  // cout << "" << endl;
 }
 
 int main() {
 
   map<string, cs3505::Warehouse> warehouses;
   map<string, cs3505::product> products;
+  cs3505::date start_date;
 
 
 
-  read_txt("data1.txt", warehouses, products);
+  read_txt("data1.txt", warehouses, products, start_date);
 
+  for (map<string, cs3505::Warehouse>::iterator wh = warehouses.begin(); 
+      wh != warehouses.end(); ++wh) {
+    cout << wh->second << endl;
+  }
  return 0;
  
 }
