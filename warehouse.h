@@ -1,6 +1,7 @@
 // Warehouse Header file
 // CS3505 1/28/13
-//
+// Travis Elnicky and Dustin Robinson
+
 
 #ifndef WAREHOUSE
 #define WAREHOUSE

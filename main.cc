@@ -1,3 +1,7 @@
+// Travis Elnicky and Dustin Robinson
+// cs3505 hw4 2/2/13
+
+
 #include <map>
 #include <string>
 #include <iostream>
@@ -88,7 +92,7 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
         in >> temp_upc;
         in >> temp_quantity;
         in >> temp_warehouse_name;
-        
+
         // update warehouse
         warehouses[temp_warehouse_name]
           .receive(products[temp_upc], temp_quantity);
@@ -217,7 +221,7 @@ int main() {
   cs3505::date start_date;
 
   read_txt("data1.txt", warehouses, products, start_date);
-  cout << "Report by Travis Elnicky and Dustin Robinsen" << endl;
+  cout << "Report by Travis Elnicky and Dustin Robinson" << endl;
   cout << endl;
   out_of_stock(warehouses, products);
   cout << endl;

@@ -1,5 +1,7 @@
 // Warehouse Implementation
 // cs3505 1/28/13
+// Travis Elnicky and Dustin Robinson
+
 #include "product.h"
 #include "warehouse.h"
 #include "date.h"
