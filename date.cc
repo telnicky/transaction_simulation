@@ -43,8 +43,9 @@ namespace cs3505
      */
     std::ostream& operator<< (std::ostream &out, const date & rhs )
     {
-
-        out << rhs.month << "/" << rhs.day << "/" << rhs.year;
+        std::string _month = (rhs.month < 10) ? "0" : "";
+        std::string _day = (rhs.day < 10) ? "0" : "";
+        out << _month << rhs.month << "/" << _day << rhs.day << "/" << rhs.year;
 
         return out;
     }

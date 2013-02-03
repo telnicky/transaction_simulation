@@ -60,7 +60,10 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
       {
         
         in >> current_word;
-        in >> temp_warehouse_name;
+        // in >> temp_warehouse_name;
+        getline(in, temp_warehouse_name);
+        temp_warehouse_name.erase(0, 1);
+        temp_warehouse_name.erase(temp_warehouse_name.size() - 1, 1);
 
         warehouses[temp_warehouse_name] = cs3505::Warehouse(temp_warehouse_name);
       }
@@ -70,7 +73,7 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
       {
         in >> current_word;
         in >> temp_date;
-      
+
         int month = atoi(temp_date.substr(0,2).c_str());
         int day = atoi(temp_date.substr(3,2).c_str());
         int year = atoi(temp_date.substr(6,4).c_str());
@@ -81,7 +84,9 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
         for (map<string, cs3505::Warehouse>::iterator wh = warehouses.begin(); 
           wh != warehouses.end(); ++wh) {          
           wh->second.set_start_day(start_date);
+          wh->second.set_busiest_day(start_date);
         } 
+cout << start_date << endl;
       }
 
       //First word  == recieve
@@ -91,7 +96,9 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
 
         in >> temp_upc;
         in >> temp_quantity;
-        in >> temp_warehouse_name;
+        getline(in, temp_warehouse_name);
+        temp_warehouse_name.erase(0, 1);
+        temp_warehouse_name.erase(temp_warehouse_name.size() - 1, 1);
 
         // update warehouse
         warehouses[temp_warehouse_name]
@@ -106,28 +113,21 @@ void read_txt(string filename, map<string, cs3505::Warehouse> & warehouses,
 
         in >> temp_upc;
         in >> temp_quantity;
-        in >> temp_warehouse_name;
-
-// cout << "REQ: " << temp_upc << " " << temp_quantity << " " 
-  // << temp_warehouse_name << endl;
-
+        getline(in, temp_warehouse_name);
+        temp_warehouse_name.erase(0, 1);
+        temp_warehouse_name.erase(temp_warehouse_name.size() - 1, 1);
         //Update warehouse;
         warehouses[temp_warehouse_name]
           .request(products[temp_upc], temp_quantity);
-        
       }
 
       //First word of a line == Next
       else if(current_word == "Next")   
       {
-        start_date.increment();
         for (map<string, cs3505::Warehouse>::iterator wh = warehouses.begin(); 
           wh != warehouses.end(); ++wh) {          
           wh->second.next_day();
-// cout << wh->second << endl;
         } 
-
-// cout << "NEXT DAY: " << start_date << endl; 
       }
 
    }
@@ -151,13 +151,13 @@ void out_of_stock(map<string, cs3505::Warehouse> & warehouses, map<string, cs350
       string upc = product_list->first;
 
       if(!(wit->second.is_out_of_stock(upc))) {
-        // remove from in stock list
+        // remove from out of stock list
         temp_products.erase(upc);
       }
     }
   }
 
-  // remaining items in list are in stock in every warehouse
+  // remaining items in list are out of stock in every warehouse
   // print products in stock
 
   cout << "Unstocked Products:" << endl;
@@ -207,20 +207,26 @@ int print_busiest_day(map<string, cs3505::Warehouse> &warehouses) {
 
   for (map<string, cs3505::Warehouse>::iterator wh = warehouses.begin(); 
       wh != warehouses.end(); ++wh) {
+    
     cout << wh->second.get_name() << " ";
     cout << wh->second.get_busiest_day() << " ";
-    cout << wh->second.get_busiest_total() << endl;;
+    cout << wh->second.get_busiest_total() << endl;
   }
 
   return 0;
 }
 
-int main() {
+int main(int argc, char* argv[]) {
   map<string, cs3505::Warehouse> warehouses;
   map<string, cs3505::product> products;
   cs3505::date start_date;
 
-  read_txt("data1.txt", warehouses, products, start_date);
+  if(argc != 2) {
+    cout << "Must provide one file" << endl;
+    return 1;
+  }
+
+  read_txt(argv[1], warehouses, products, start_date);
   cout << "Report by Travis Elnicky and Dustin Robinson" << endl;
   cout << endl;
   out_of_stock(warehouses, products);

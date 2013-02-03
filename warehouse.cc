@@ -93,10 +93,12 @@ namespace cs3505 {
   
   int Warehouse::set_start_day(date date) {
     start_date = date;
+    return 0;
   }
 
   int Warehouse::set_busiest_day(date date) {
     busiest_day = date;
+    return 0;
   }
 
   int Warehouse::transaction(int quantity) {
@@ -107,7 +109,7 @@ namespace cs3505 {
       for(int i = 0; i < total_days; i++) {
         temp.increment();
       }
-      
+
       busiest_total = current_day;
       set_busiest_day(temp);      
     }
