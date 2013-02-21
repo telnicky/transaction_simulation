@@ -1,0 +1,583 @@
+
+
+
+0000400094 value time hamburger pizza
+0001266845 diet slice orange
+0004424709 lucky clearly fruit
+0007273621 ball fruit jell pectin
+0013696544 orange mint tictac
+0014712269 ice drops orange lip balm
+0015304579 halls honey lemon
+0017323327 chuckles orange slices
+0019544089 spartan crunchy peanut butter
+0023774742 everyday living ultra dish liquid green apple scent
+0025852053 wild bean coffee
+0026536630 danish apple pocket
+0030177752 lucky apple rolls
+0031336543 lucky pasta salad macaroni
+0041106096 aero chocolate truffle
+0044312190 lady lee sharp cheddar cheese
+0052314642 grand truffles chocolate
+0052531160 cliff bar chocolate espresso
+0053324100 pep farm goldfish pizza
+0053952280 cake box lucky print
+0053967853 ball fruit jell brand pectin
+0054299017 fantasy vanilla finger cookie
+0055295531 brachs minute maid all natural fruit snacks
+0061811428 vanilla cookie candle
+0069076096 fruit works peach papaya
+0081653810 spartan shredded taco blend cheese
+0083772960 shrimp egg rolls
+0085317103 al cheese cheddar
+0086200588 sports edge fruit snacks
+0092709491 slice orange soda
+0093042924 lucky plain spaghetti sauce
+0101010101 kevins long lasting wheat bread
+0106784737 large cookie cake decor
+0107833416 splendid fancy assorted cookies
+0109777401 lady lee hamburger chips
+0112159068 western family medium grade aa eggs
+0115980932 minute maid orange
+0118552723 high protein peanut granola bars
+0130812231 swiss miss hot cocoa lite
+0134369054 premier coffee liqueur
+0137125126 lucky pasta large shells
+0137293280 cob peanut butter cookie
+0145998962 oatmeal raisin cookies
+0146641660 cookie jar snowman
+0149097537 ralphs apple juice
+0150722218 meadow gold egg nog
+0154667049 brachs orange slices
+0157446875 lucky pasta wide egg noodles
+0161551039 ice cream cake
+0164370605 lucky blue cheese dressing
+0166420609 strudel bites apple
+0167802905 cake donut variety
+0172641109 wed cake tier carrot
+0173298428 boston cream cake
+0179348960 whoppers robin eggs malted mild candy
+0185656278 slim fast peanut butter crunch
+0190169701 liners cake layer
+0192262788 slim fast optima chocolate peanut
+0197660133 chocolate french twirl
+0206414780 egg roll pork
+0210730166 big fizz lemon lime pop
+0223132887 motts apple sauce
+0225641383 lady lee apple juice
+0235535130 white rose apple juice
+0237901873 trader joe crunchy unsalted peanut butter
+0238578422 billy hatcher and the giant egg
+0240352283 skinner spaghetti calcium rich
+0242503906 jolly rancher fruit chew
+0243906944 trader joes french roast coffee beans
+0244004400 mixed fruit shipper
+0247208567 banana nut creme cake
+0249216613 cheese creme cake
+0249523986 lady lee frosted animal cookie
+0249555852 apex protein cookie mint chip
+0250397317 apple snack pies
+0250879504 lemon meringue pie
+0251602770 lucky hot pepper jack cheese
+0255084073 chocolate pound cake
+0258421191 old fash peanut candy
+0262648952 ice cream cake vanilla
+0287394851 for maximum value chocolate chip cookies
+0289745973 skinner spaghetti enriched
+0291269980 lucky bleach lemon scent
+0293476553 apricot fruit tart
+0293802988 happy day orange juice
+0297888097 world market french roast dark roast ground coffee
+0298550760 upscale yogurt mousse cake
+0305724832 deluxe sherbet orange
+0306403591 master choice pure vanilla extract
+0308529116 sh apple jelly
+0310948157 real lemon lemon juice
+0312318880 bounty dark chocolate
+0315481678 lady lee swiss cheese
+0317098494 sierra mist lemon squeeze
+0317620112 sweet treat chocolate nut good
+0319343647 master choice apple cider
+0320194978 gold gate veg egg rolls
+0324746637 cup cakes chocolate
+0326084898 jumbo peanut butter cookie
+0328321152 true lemon shaker
+0338310317 spartan lemon lime soda
+0341714853 champs chums cheese twist
+0343045997 twin ultra fuel fruit
+0343640640 chocolate low fat milk
+0345595251 happy hippo cookie wafer bar
+0349746525 lady lee lite fruit cocktail
+0351299167 tigers milk peanut butter bar
+0351663921 home style pasta sauce mushroom
+0358567752 lady lee cocoa comets
+0366272457 wooden slice and bake cookie set
+0367297526 pad for small bar cakes
+0368493619 chocolate chip cookie
+0379986664 am cookie cutter
+0381550496 clover valley orange soda
+0383305028 spartan natural apple juice
+0385395562 plastic coffee mug
+0386708529 cob sugar cookie
+0387117147 zig zag orange with free orange lights
+0391573919 cup cakes white sweet ice
+0394858621 plain cake donuts
+0397240513 rocky top orange soda
+0407415464 cake white sweet iced
+0408213951 hotel bar cheddar cheese sharp
+0422868648 ley grand taro cake
+0425880957 princes pure orange juice
+0426205940 peanut treat suet food for wild birds
+0428346969 spartan apple juice
+0434971129 cake chocolate sweet iced
+0435471064 table talk lemon meringue
+0437168834 lady lee mixed fruit
+0438569928 western family lemon juice
+0446364954 lean cuisine baked cheese ravioli
+0457623511 pasta rings with franks
+0468022587 syrup slice mandarin orange
+0468822775 maple cheese bread dough
+0473700810 western family lemon drops
+0475529981 french cheese cake
+0477812352 mountain dew game fuel wild fruit flavor
+0478721449 nellie black forest cake
+0478937694 world market hazelnut medium roast ground coffee
+0481064075 slice one orange soda
+0481215539 diet coke lemon
+0482508640 sierra mist diet orange
+0490792752 dole apple juice
+0491263896 dawn cheese icing
+0494743095 cookies and cream cake
+0495500150 lucky pasta rigatoni
+0496785112 lady lee brick cream cheese
+0499326313 zig zag french orange
+0499465240 grand union apple juice
+0504057751 peanut raw tray
+0509954066 spartan orange soda
+0519661222 assorted malted milk eggs
+0519947894 table talk lemon pie
+0520822447 lemon oil duster
+0521471665 lean cuisine classic five cheese lasagna
+0525227187 fruit sampler basket
+0526425108 eagle brand block vanilla
+0530782416 peach fruit pie
+0536923647 serious ginseng fruit drink
+0537158897 swiss miss spiced apple cider mix
+0538763134 lucky pasta small shells
+0542633526 cake layers chocolate
+0545160703 payday peanut caramel bar
+0547269890 petites nail enamel cocoa
+0554884780 cherry creme cake
+0555063725 nacho cheese tortilla chips
+0561017395 soft cream cheese
+0561402750 mandarin orange slice
+0568919628 mountain dairy grade aa eggs
+0572739598 jumbo sugar cookie
+0575861899 golden grain spaghetti
+0578212420 zig zag king size french orange
+0581893891 brie gourmet cheese
+0583378408 lucky white cake mix
+0591972838 hopes sugar cookies
+0592264414 lemon creme muffins
+0592382869 cake parfait lid
+0599516202 chocolate milk mix
+0601819888 swiss miss no sugar added hot cocoa
+0611406763 low carb cookies
+0612548925 veggie patch spiced apple sau
+0613653959 dutch hot cocoa mix
+0614219000 almond apricot and yogurt bar
+0615518685 tomato spinach pasta salad
+0620800736 just fruit salad
+0621399549 autocrat coffee syrup pints
+0622082514 trader joes organic mini peanut butter sandwich crackers
+0628202542 cup cakes white
+0630258075 lucky vanilla caramels
+0634683824 pizza dough balls
+0639602355 fruit fresh display
+0643137165 lucky cinnamon apple sauce
+0644234205 fruit of the loom string bikini
+0646030660 dole sparkler orange
+0647352991 mars extra chocolate special edition drink
+0650563992 one dozen grade aa eggs
+0653900258 sip lid plain for coffee cup
+0661917563 deluxe churned artisan vanilla bean light ice cream
+0662757098 skinner egg noodles medium enriched
+0675624570 brisk lemon iced tea
+0677852599 vanilla bean cocoa
+0679942597 ralphs lite mandarin oranges peeled segments in mandarin orange juice
+0681565423 pumpkin creme cake
+0683180970 ambrosia crumble puds devon custard with apple compote
+0685887688 green apple rip rolls
+0687618812 lite lemon yogurt
+0689391681 amp energy juice orange
+0689899674 cookie jar dinner
+0692364631 danish butter cookies
+0694404956 just juice orange juice
+0695361827 motts plus kids apple punch
+0695553519 palmers cocoa butter lotion
+0696760374 al cheese swiss
+0697421696 pur vanilla frosting
+0702765029 skinner lone star pasta enriched
+0705546022 lucky lemon drops
+0707041331 diet slice mandarin orange
+0707655013 coffee break coffee set
+0712267477 easter egg cake
+0712465857 bounty milk chocolate
+0712824206 jolly rancher bold fruit smoothie
+0716892810 chicken label lemon
+0723506147 soya chocolate dessert in pots
+0730495329 slim fast peanut butter
+0731083313 tree tavern cheese pizza
+0732200290 mamba lemon candy
+0735079435 kinder chocolate maxi bar
+0736735438 cheese sweet rolls
+0742871225 chocolate fudge cake
+0746251911 syrup slice lemon lime
+0749404356 super bubble fruit
+0751628544 sheet fruit basket white cake
+0751658109 al cheese muenster
+0756850946 table cake white
+0761473656 large white eggs
+0771663016 the orange box
+0780836776 gen cheese loaf
+0781577805 dextro energy lemon
+0782342351 jolly rancher fruit chew pops
+0783904214 swiss miss milk chocolate hot cocoa
+0786111814 cool classic vanilla cone
+0786592822 wedding cake kit
+0786765867 savarin auto coffee
+0793312910 brachs milk maid caramel apple candy corn
+0802220894 master choice apple pie
+0802910920 emerald cocoa roast almonds
+0803630789 viva light egg nog
+0805980869 chocolate chunk soft baked cookies
+0809976178 world market vanilla bean medium roast ground coffee
+0812357624 lemon cream pie
+0814257942 quaker hill farms chocolate chip cookies
+0815773390 brach orange slices
+0817493060 hotel bar cheddar cheese longhorn style
+0821136578 lady lee cinnamon apple sauce
+0830638387 round cake team logo
+0833048479 barilla pasta sauce spicy pepper
+0834787933 apple pipe tobacco
+0835508019 gen eggs large
+0838431562 snickers chocolate bar
+0839095464 whims crunchy clusters chocolate cashew cookies
+0839636125 value time iced ginger cookies
+0848406091 syrup storm lemon lime
+0856622110 nordic ware original bundt cake mix zesty lemon
+0857409546 all sport fruit punch
+0861123400 walnut grove bottled water
+0861444908 cow fruit variety pack
+0864213933 cake board trim white
+0866223184 cheese creme muffins
+0870132805 danish cheese pocket
+0871615646 ensure high protein vanilla
+0871647834 lucky fruit punch soda
+0873737803 swiss miss hot cocoa mix milk chocolate
+0883800840 nest eggs large brown
+0884437729 country apple hand soap
+0890044443 savarin decaf coffee
+0890379496 chocolate chip cookies
+0893804260 acme whole wheat walnut
+0898437414 creamy cream cheese frosting
+0900872510 autocrat premium coffee
+0903200227 lucky butter pound cake
+0908356935 deli cheese puffs
+0909872238 autocrat coffee syrup quart
+0918001684 lady lee orange drink
+0925604727 al cheese hot pepper
+0933005529 swiss miss hot chocolate
+0933015718 mini robin eggs malted milk candy
+0936471323 lean cuisine chicken al orange
+0937175728 fruit geyser peach
+0938546495 lemon creme cake
+0940485888 sh chocolate milk single
+0942456661 simply lite chocolate wafer
+0944673178 hotel bar cheddar cheese mild
+0944842704 lemon chicken breast
+0945136183 cake half sheet white
+0947205694 hopes peanut butter cookies
+0949643804 fruit of the loom briefs
+0952606487 ralphs brand cocoa powder
+0954297117 classic five cheese lasagna
+0960175833 skinner egg noodles extra wide enriched
+0960832011 lady lee pepper jack cheese
+0962874845 orange tiny terror head
+0963662896 lean cuisine brick oven garlic chicken pizza
+0964813077 diet lemon iced tea
+0965407347 crunchy peanut butter
+0965570368 copy cake charge
+0966516184 black cherry fruit on the bottom yogurt
+0967241282 seedy little currant cookies
+0967537199 swiss miss caramel cream hot cocoa mix
+0967654725 brach fruit slices
+0971356490 great value chocolate milk
+0972930382 lady lee muenster cheese
+0981531849 father table combo pizza
+0985798697 fruit basket majestic
+0995677803 premix mandarin orange
+Abilene 05/29/2006 1487
+Akron 02/06/2008 1724
+Albuquerque 04/14/2005 1843
+Alexandria 08/11/2006 1810
+Allentown 05/15/2008 2276
+Amarillo 01/16/2009 1836
+Anaheim 09/20/2006 1799
+Anchorage 11/18/2004 1873
+Ann Arbor 05/22/2007 2137
+Antioch 04/14/2008 1826
+Arlington 03/29/2004 2838
+Arvada 05/02/2001 1684
+Athens 11/03/2001 1873
+Atlanta 07/05/2002 1543
+Augusta 07/07/2006 1710
+Aurora 10/02/2007 2853
+Austin 04/24/2001 2376
+Bakersfield 12/01/2006 1894
+Baltimore 04/13/2001 2048
+Baton Rouge 08/30/2002 1834
+Beaumont 05/24/2007 1956
+Bellevue 10/01/2008 1858
+Berkeley 03/01/2006 2293
+Billings 12/27/2008 1747
+Birmingham 10/09/2004 1732
+Boise 10/25/2004 1882
+Boston 07/26/2006 1919
+Bridgeport 11/07/2010 1861
+Brownsville 11/22/2002 2336
+Buffalo 05/31/2007 2467
+Burbank 03/30/2005 1718
+Busiest Days:
+Cambridge 03/31/2006 1930
+Cape Coral 01/06/2005 1799
+Carrollton 06/03/2002 1855
+Cary 09/01/2003 1885
+Cedar Rapids 10/29/2008 2116
+Chandler 05/16/2004 1906
+Charleston 08/09/2007 1753
+Charlotte 12/15/2003 1809
+Chattanooga 11/29/2008 2217
+Chesapeake 01/18/2009 1859
+Chicago 10/16/2009 1701
+Chula Vista 07/14/2008 1735
+Cincinnati 08/14/2009 2006
+Clarksville 01/31/2001 1815
+Clearwater 12/29/2007 1731
+Cleveland 08/25/2003 1730
+Colorado Springs 02/06/2002 2432
+Columbia 03/21/2001 2737
+Columbus 08/30/2004 2244
+Concord 06/17/2001 2313
+Coral Springs 08/05/2007 1796
+Corona 04/04/2002 1711
+Corpus Christi 02/24/2007 1708
+Costa Mesa 09/01/2005 1840
+Dallas 04/11/2005 1931
+Daly City 04/29/2008 3178
+Davenport 09/07/2007 2043
+Dayton 05/07/2002 2378
+Denton 04/13/2007 1878
+Denver 07/07/2008 1864
+Des Moines 01/09/2004 2160
+Detroit 01/20/2007 2392
+Downey 11/22/2005 1879
+Durham 05/10/2004 1743
+El Monte 07/30/2005 1780
+El Paso 02/07/2007 1748
+Elgin 09/22/2008 1920
+Elizabeth 09/16/2009 1641
+Elk Grove 06/06/2010 2047
+Erie 12/25/2008 1883
+Escondido 10/05/2005 1737
+Eugene 06/14/2010 1770
+Evansville 12/24/2005 1845
+Fairfield 09/06/2003 1919
+Fayetteville 05/15/2004 1774
+Flint 09/27/2002 1797
+Fontana 02/25/2004 1948
+Fort Collins 05/15/2007 1965
+Fort Lauderdale 07/21/2008 1692
+Fort Wayne 09/19/2008 2934
+Fort Worth 08/28/2003 1698
+Fremont 12/29/2001 1805
+Fresno 11/26/2007 1757
+Fullerton 05/16/2004 1737
+Fully-Stocked Products:
+Gainesville 11/21/2010 1806
+Garden Grove 03/02/2003 2031
+Garland 01/14/2007 2691
+Gilbert 03/21/2001 1943
+Glendale 07/17/2005 3194
+Grand Prairie 11/30/2008 2315
+Grand Rapids 03/04/2005 1987
+Green Bay 05/10/2003 1918
+Greensboro 05/29/2006 1812
+Gresham 10/04/2003 1852
+Hampton 06/06/2002 1817
+Hartford 03/31/2007 2012
+Hayward 10/19/2007 1756
+Henderson 02/04/2004 1839
+Hialeah 03/17/2002 1768
+High Point 01/10/2010 2340
+Hollywood 10/29/2008 1448
+Honolulu 04/27/2007 2269
+Houston 09/30/2006 2209
+Huntington Beach 01/06/2003 2041
+Huntsville 12/10/2009 1589
+Independence 08/07/2004 1974
+Indianapolis 08/18/2004 2136
+Inglewood 01/18/2009 1762
+Irvine 03/02/2008 1858
+Irving 01/22/2009 1591
+Jackson 02/24/2004 1899
+Jacksonville 05/01/2005 1861
+Jersey City 05/24/2001 1957
+Joliet 07/01/2005 1757
+Kansas City 04/09/2010 2247
+Killeen 07/03/2004 1954
+Knoxville 11/28/2010 1882
+Lafayette 06/02/2006 1855
+Lakewood 10/21/2005 2120
+Lancaster 02/22/2007 2565
+Lansing 03/03/2006 1894
+Laredo 08/27/2009 1890
+Las Vegas 09/26/2008 1982
+Lewisville 01/13/2004 2390
+Lexington 06/18/2007 1681
+Lincoln 02/24/2007 1838
+Little Rock 02/16/2003 1986
+Long Beach 11/19/2002 1782
+Los Angeles 11/22/2005 2332
+Louisville 01/15/2003 1839
+Lowell 03/21/2007 1910
+Lubbock 12/22/2005 1723
+Madison 08/20/2008 1867
+Manchester 10/06/2010 2795
+McAllen 04/24/2002 2223
+McKinney 06/18/2009 1880
+Memphis 02/11/2004 2206
+Mesa 02/28/2006 1798
+Mesquite 08/24/2001 2223
+Miami 03/20/2006 1959
+Miami Gardens 07/03/2003 1897
+Midland 01/03/2008 2367
+Milwaukee 08/26/2004 1874
+Minneapolis 07/24/2008 1958
+Miramar 12/31/2001 3269
+Mobile 11/26/2009 1891
+Modesto 08/04/2008 2314
+Montgomery 09/04/2005 1731
+Moreno Valley 02/22/2005 1984
+Murfreesboro 05/24/2001 1833
+Naperville 06/03/2009 2378
+Nashville 07/14/2005 1880
+New Haven 10/07/2005 1837
+New Orleans 02/17/2002 1935
+New York 01/04/2007 2047
+Newark 10/10/2008 1771
+Newport News 12/25/2006 2100
+Norfolk 08/12/2009 2364
+Norman 04/07/2003 1909
+North Las Vegas 02/22/2001 2015
+Norwalk 03/02/2005 1936
+Oakland 06/30/2008 1739
+Oceanside 09/28/2009 2258
+Oklahoma City 11/19/2002 2233
+Olathe 05/31/2010 2394
+Omaha 09/08/2008 1967
+Ontario 02/06/2004 2325
+Orange 01/16/2002 2109
+Orlando 10/03/2003 1916
+Overland Park 04/12/2007 1663
+Oxnard 04/01/2010 2062
+Palm Bay 08/08/2010 1928
+Palmdale 05/16/2003 1904
+Pasadena 06/04/2001 2614
+Paterson 06/03/2001 1916
+Pembroke Pines 10/06/2008 1771
+Peoria 04/28/2006 2261
+Philadelphia 01/06/2003 1908
+Phoenix 09/29/2004 2300
+Pittsburgh 03/04/2007 1903
+Plano 06/20/2005 1786
+Pomona 08/04/2001 2495
+Pompano Beach 02/09/2009 1744
+Port St. Lucie 11/13/2010 1673
+Portland 02/03/2004 2088
+Portsmouth 03/04/2007 1726
+Providence 03/19/2005 2398
+Provo 05/30/2009 2303
+Pueblo 10/01/2008 1841
+Raleigh 05/08/2009 1835
+Rancho Cucamonga 12/16/2005 1835
+Reno 11/27/2008 1878
+Report by Kevin Avery
+Richardson 09/28/2010 2021
+Richmond 08/21/2008 2280
+Riverside 05/16/2004 2104
+Rochester 08/20/2003 2260
+Rockford 08/24/2010 1896
+Roseville 09/04/2003 2192
+Round Rock 09/13/2010 2601
+Sacramento 03/12/2005 1559
+Salem 05/07/2006 2156
+Salinas 06/21/2003 2179
+Salt Lake City 08/08/2001 2248
+San Antonio 08/03/2001 1611
+San Bernardino 02/26/2004 1932
+San Buenaventura 06/05/2002 1782
+San Diego 02/06/2001 1786
+San Francisco 12/18/2003 2145
+San Jose 11/18/2010 2044
+Santa Ana 06/10/2005 1937
+Santa Clara 07/18/2010 2304
+Santa Clarita 06/06/2010 1759
+Santa Rosa 08/19/2007 1585
+Savannah 10/29/2008 1951
+Scottsdale 02/22/2001 1804
+Seattle 08/21/2008 1864
+Shreveport 01/05/2002 1902
+Simi Valley 04/04/2006 1965
+Sioux Falls 04/16/2008 1883
+South Bend 12/16/2005 1855
+Spokane 06/09/2002 2211
+Springfield 07/04/2001 2770
+St. Louis 06/23/2004 2138
+St. Paul 01/01/2006 1888
+St. Petersburg 07/12/2005 2061
+Stamford 10/20/2005 2146
+Sterling Heights 09/24/2001 2413
+Stockton 03/04/2002 1899
+Sunnyvale 04/07/2001 1655
+Syracuse 09/20/2006 1755
+Tacoma 06/12/2007 1803
+Tallahassee 09/13/2010 1818
+Tampa 03/27/2006 2058
+Tempe 03/25/2008 1671
+Thornton 08/31/2007 2393
+Thousand Oaks 12/11/2002 1841
+Toledo 03/07/2007 1757
+Topeka 08/31/2003 1587
+Torrance 03/29/2005 1944
+Tucson 07/30/2005 2144
+Tulsa 01/22/2005 2465
+Unstocked Products:
+Vallejo 07/05/2006 2683
+Vancouver 11/30/2008 2495
+Victorville 12/11/2001 1971
+Virginia Beach 04/21/2003 2128
+Visalia 04/14/2002 2113
+Waco 01/07/2003 2400
+Warren 12/16/2005 1957
+Washington 11/28/2006 2260
+Waterbury 08/16/2005 2480
+West Covina 03/13/2003 2457
+West Jordan 12/14/2005 1927
+West Valley City 09/11/2005 1873
+Westminster 09/03/2003 2002
+Wichita 02/16/2002 1867
+Wichita Falls 03/29/2009 1779
+Wilmington 03/04/2009 1889
+Winston-Salem 07/10/2002 1902
+Worcester 09/01/2007 2099
+Yonkers 02/26/2004 1897

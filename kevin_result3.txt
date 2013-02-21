@@ -1,0 +1,284 @@
+
+
+
+0000400094 value time hamburger pizza
+0026536630 danish apple pocket
+0167802905 cake donut variety
+0192262788 slim fast optima chocolate peanut
+0238578422 billy hatcher and the giant egg
+0324640842 savarin all method coffee
+0324746637 cup cakes chocolate
+0435471064 table talk lemon meringue
+0482508640 sierra mist diet orange
+0544808501 salmon fillet lemon
+0615518685 tomato spinach pasta salad
+0695361827 motts plus kids apple punch
+0782342351 jolly rancher fruit chew pops
+0834787933 apple pipe tobacco
+0889565367 golden hamburger rolls
+0890379496 chocolate chip cookies
+Abilene 05/29/2010 45
+Akron 05/12/2010 35
+Albuquerque 05/12/2010 30
+Alexandria 05/19/2010 35
+Allentown 05/18/2010 46
+Amarillo 05/31/2010 39
+Anaheim 05/23/2010 39
+Anchorage 05/05/2010 33
+Ann Arbor 05/13/2010 25
+Antioch 05/18/2010 37
+Arlington 05/12/2010 50
+Arvada 05/12/2010 31
+Athens 05/18/2010 32
+Atlanta 05/30/2010 41
+Augusta 05/12/2010 37
+Aurora 05/31/2010 66
+Austin 05/31/2010 47
+Bakersfield 05/12/2010 40
+Baltimore 05/14/2010 42
+Baton Rouge 05/12/2010 33
+Beaumont 05/25/2010 37
+Bellevue 05/29/2010 28
+Berkeley 05/31/2010 32
+Billings 05/03/2010 32
+Birmingham 05/12/2010 40
+Boise 05/13/2010 61
+Boston 05/12/2010 46
+Bridgeport 05/14/2010 27
+Brownsville 05/29/2010 28
+Buffalo 05/26/2010 30
+Burbank 05/16/2010 30
+Busiest Days:
+Cambridge 05/26/2010 33
+Cape Coral 05/18/2010 41
+Carrollton 05/29/2010 46
+Cary 05/29/2010 30
+Cedar Rapids 05/29/2010 32
+Chandler 05/30/2010 31
+Charleston 05/24/2010 27
+Charlotte 05/31/2010 27
+Chattanooga 05/12/2010 34
+Chesapeake 05/31/2010 73
+Chicago 05/23/2010 46
+Chula Vista 05/19/2010 24
+Cincinnati 05/12/2010 34
+Clarksville 05/24/2010 27
+Clearwater 05/30/2010 32
+Cleveland 05/19/2010 27
+Colorado Springs 05/05/2010 44
+Columbia 05/31/2010 79
+Columbus 05/13/2010 54
+Concord 05/12/2010 45
+Coral Springs 05/26/2010 38
+Corona 05/18/2010 35
+Corpus Christi 05/21/2010 34
+Costa Mesa 05/29/2010 30
+Dallas 05/03/2010 39
+Daly City 05/13/2010 29
+Davenport 05/05/2010 47
+Dayton 05/26/2010 41
+Denton 05/31/2010 45
+Denver 05/05/2010 31
+Des Moines 05/29/2010 46
+Detroit 05/10/2010 32
+Downey 05/18/2010 26
+Durham 05/13/2010 42
+El Monte 05/18/2010 41
+El Paso 05/30/2010 39
+Elgin 05/29/2010 32
+Elizabeth 05/31/2010 35
+Elk Grove 05/26/2010 33
+Erie 05/19/2010 56
+Escondido 05/13/2010 31
+Eugene 05/14/2010 29
+Evansville 05/31/2010 31
+Fairfield 05/03/2010 29
+Fayetteville 05/13/2010 44
+Flint 05/16/2010 50
+Fontana 05/19/2010 39
+Fort Collins 05/23/2010 46
+Fort Lauderdale 05/29/2010 36
+Fort Wayne 05/26/2010 33
+Fort Worth 05/31/2010 43
+Fremont 05/29/2010 35
+Fresno 05/29/2010 42
+Fullerton 05/31/2010 33
+Fully-Stocked Products:
+Gainesville 05/13/2010 35
+Garden Grove 05/29/2010 30
+Garland 05/26/2010 53
+Gilbert 05/13/2010 30
+Glendale 05/18/2010 57
+Grand Prairie 05/03/2010 32
+Grand Rapids 05/05/2010 38
+Green Bay 05/12/2010 47
+Greensboro 05/29/2010 57
+Gresham 05/29/2010 31
+Hampton 05/13/2010 43
+Hartford 05/12/2010 46
+Hayward 05/12/2010 47
+Henderson 05/12/2010 38
+Hialeah 05/10/2010 33
+High Point 05/03/2010 32
+Hollywood 05/26/2010 41
+Honolulu 05/13/2010 51
+Houston 05/18/2010 54
+Huntington Beach 05/05/2010 44
+Huntsville 05/16/2010 42
+Independence 05/19/2010 32
+Indianapolis 05/29/2010 29
+Inglewood 05/03/2010 21
+Irvine 05/30/2010 32
+Irving 05/13/2010 39
+Jackson 05/05/2010 30
+Jacksonville 05/21/2010 33
+Jersey City 05/23/2010 26
+Joliet 05/16/2010 32
+Kansas City 05/31/2010 49
+Killeen 05/18/2010 26
+Knoxville 05/14/2010 32
+Lafayette 05/18/2010 31
+Lakewood 05/16/2010 29
+Lancaster 05/18/2010 33
+Lansing 05/29/2010 37
+Laredo 05/29/2010 47
+Las Vegas 05/05/2010 45
+Lewisville 05/13/2010 38
+Lexington 05/19/2010 48
+Lincoln 05/18/2010 29
+Little Rock 05/16/2010 30
+Long Beach 05/12/2010 27
+Los Angeles 05/19/2010 34
+Louisville 05/18/2010 33
+Lowell 05/26/2010 32
+Lubbock 05/31/2010 51
+Madison 05/21/2010 35
+Manchester 05/16/2010 34
+McAllen 05/31/2010 62
+McKinney 05/16/2010 52
+Memphis 05/25/2010 33
+Mesa 05/31/2010 27
+Mesquite 05/14/2010 34
+Miami 05/04/2010 42
+Miami Gardens 05/26/2010 47
+Midland 05/13/2010 51
+Milwaukee 05/13/2010 45
+Minneapolis 05/23/2010 27
+Miramar 05/13/2010 45
+Mobile 05/18/2010 31
+Modesto 05/19/2010 51
+Montgomery 05/31/2010 44
+Moreno Valley 05/29/2010 30
+Murfreesboro 05/16/2010 36
+Naperville 05/16/2010 29
+Nashville 05/29/2010 24
+New Haven 05/19/2010 60
+New Orleans 05/14/2010 32
+New York 05/13/2010 31
+Newark 05/29/2010 46
+Newport News 05/26/2010 35
+Norfolk 05/31/2010 28
+Norman 05/18/2010 42
+North Las Vegas 05/13/2010 38
+Norwalk 05/31/2010 36
+Oakland 05/19/2010 38
+Oceanside 05/14/2010 34
+Oklahoma City 05/29/2010 63
+Olathe 05/13/2010 40
+Omaha 05/14/2010 40
+Ontario 05/31/2010 51
+Orange 05/31/2010 39
+Orlando 05/31/2010 35
+Overland Park 05/12/2010 40
+Oxnard 05/13/2010 35
+Palm Bay 05/12/2010 34
+Palmdale 05/24/2010 22
+Pasadena 05/18/2010 76
+Paterson 05/26/2010 38
+Pembroke Pines 05/31/2010 53
+Peoria 05/31/2010 79
+Philadelphia 05/16/2010 50
+Phoenix 05/12/2010 36
+Pittsburgh 05/23/2010 32
+Plano 05/12/2010 39
+Pomona 05/10/2010 29
+Pompano Beach 05/12/2010 65
+Port St. Lucie 05/19/2010 36
+Portland 05/23/2010 39
+Portsmouth 05/12/2010 38
+Providence 05/05/2010 24
+Provo 05/01/2010 35
+Pueblo 05/16/2010 26
+Raleigh 05/12/2010 36
+Rancho Cucamonga 05/19/2010 35
+Reno 05/14/2010 34
+Report by Kevin Avery
+Richardson 05/12/2010 35
+Richmond 05/26/2010 67
+Riverside 05/21/2010 32
+Rochester 05/18/2010 74
+Rockford 05/05/2010 42
+Roseville 05/24/2010 26
+Round Rock 05/14/2010 34
+Sacramento 05/26/2010 48
+Salem 05/16/2010 38
+Salinas 05/21/2010 38
+Salt Lake City 05/13/2010 45
+San Antonio 05/29/2010 40
+San Bernardino 05/13/2010 39
+San Buenaventura 05/31/2010 36
+San Diego 05/18/2010 40
+San Francisco 05/30/2010 24
+San Jose 05/29/2010 42
+Santa Ana 05/05/2010 35
+Santa Clara 05/12/2010 30
+Santa Clarita 05/25/2010 23
+Santa Rosa 05/10/2010 38
+Savannah 05/26/2010 27
+Scottsdale 05/16/2010 40
+Seattle 05/24/2010 36
+Shreveport 05/16/2010 33
+Simi Valley 05/18/2010 36
+Sioux Falls 05/29/2010 40
+South Bend 05/31/2010 31
+Spokane 05/19/2010 44
+Springfield 05/12/2010 85
+St. Louis 05/29/2010 34
+St. Paul 05/31/2010 31
+St. Petersburg 05/26/2010 36
+Stamford 05/29/2010 35
+Sterling Heights 05/18/2010 46
+Stockton 05/12/2010 41
+Sunnyvale 05/29/2010 38
+Syracuse 05/23/2010 44
+Tacoma 05/29/2010 58
+Tallahassee 05/21/2010 38
+Tampa 05/19/2010 28
+Tempe 05/05/2010 49
+Thornton 05/16/2010 47
+Thousand Oaks 05/31/2010 30
+Toledo 05/29/2010 33
+Topeka 05/18/2010 43
+Torrance 05/30/2010 26
+Tucson 05/16/2010 47
+Tulsa 05/21/2010 30
+Unstocked Products:
+Vallejo 05/31/2010 41
+Vancouver 05/16/2010 30
+Victorville 05/16/2010 51
+Virginia Beach 05/26/2010 41
+Visalia 05/19/2010 34
+Waco 05/16/2010 36
+Warren 05/26/2010 35
+Washington 05/18/2010 30
+Waterbury 05/05/2010 34
+West Covina 05/18/2010 31
+West Jordan 05/21/2010 28
+West Valley City 05/29/2010 28
+Westminster 05/29/2010 39
+Wichita 05/12/2010 48
+Wichita Falls 05/13/2010 35
+Wilmington 05/31/2010 42
+Winston-Salem 05/13/2010 38
+Worcester 05/18/2010 65
+Yonkers 05/12/2010 42

@@ -6,7 +6,8 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include "Warehouse.h"
+#include <stdlib.h>
+#include "warehouse.h"
 #include "product.h"
 #include "date.h"
 
